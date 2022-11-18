@@ -26,7 +26,7 @@ pipeline {
         }
         stage('Full path') {
             steps {
-                sh("${env.WORKSPACE}/script/fibonacci.sh ${env.NUMBER}")
+                sh("${env.WORKSPACE}/script/fibonacci.bat ${env.NUMBER}")
             }
         }
         stage('Change directory') {
